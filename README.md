@@ -24,3 +24,7 @@ Para la validación del funcionamiento se adjunta en el código la colección de
 https://ob-spring-rest-laptop.herokuapp.com/api/laptops -> Obtiene todas las laptops
 https://ob-spring-rest-laptop.herokuapp.com/api/laptops/1 -> Obtiene la laptop con identificador 1
 ```
+
+## Ejercicio 3
+* Se agregan las dependencias de Spring Security sobre el proyecto API REST de Laptops
+* Se configuran 2 usuarios (user y admin) en memoria utilizando una clase WebSecurityConfig
