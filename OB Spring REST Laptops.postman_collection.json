@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "03e260fa-c32d-413f-b912-40ff9bb9df68",
+		"name": "OB Spring REST Laptops",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Saluda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/saludo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"saludo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/laptops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ob-spring-rest-laptop.herokuapp.com/api/laptops/1",
+					"protocol": "https",
+					"host": [
+						"ob-spring-rest-laptop",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ob-spring-rest-laptop.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"ob-spring-rest-laptop",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"Lenovo\",\r\n    \"model\": \"IdeaPad\",\r\n    \"screenSize\": 15.6,\r\n    \"processor\": \"Core i5-1135G7\",\r\n    \"ram\": 20,\r\n    \"storage\": 512,\r\n    \"operatingSystem\": \"Windows 11\",\r\n    \"releaseYear\": 2021,\r\n    \"price\": 750.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"Lenovo\",\r\n    \"model\": \"IdeaPad\",\r\n    \"screenSize\": 15.6,\r\n    \"processor\": \"Core i5-1135G7\",\r\n    \"ram\": 20,\r\n    \"storage\": 512,\r\n    \"operatingSystem\": \"Windows 11\",\r\n    \"releaseYear\": 2021,\r\n    \"price\": 750.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ob-spring-rest-laptop.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"ob-spring-rest-laptop",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Heroku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"brand\": \"Lenovo\",\r\n    \"model\": \"IdeaPad\",\r\n    \"screenSize\": 15.6,\r\n    \"processor\": \"Core i5-1135G7\",\r\n    \"ram\": 20,\r\n    \"storage\": 1024,\r\n    \"operatingSystem\": \"Windows 11\",\r\n    \"releaseYear\": 2022,\r\n    \"price\": 800.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ob-spring-rest-laptop.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"ob-spring-rest-laptop",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"brand\": \"Lenovo\",\r\n    \"model\": \"IdeaPad\",\r\n    \"screenSize\": 15.6,\r\n    \"processor\": \"Core i5-1135G7\",\r\n    \"ram\": 20,\r\n    \"storage\": 1024,\r\n    \"operatingSystem\": \"Windows 11\",\r\n    \"releaseYear\": 2022,\r\n    \"price\": 800.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/laptops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
